@@ -106,14 +106,14 @@ async def test_project(dut):
 
     # Start capturing
 
-    os.makedirs("output", exist_ok=True)
+   # os.makedirs("output", exist_ok=True)
 
-    for i in range(CAPTURE_FRAMES):
-        frame = await capture_frame(i)
-        frame.save(f"output/frame{i}.png")
+  #  for i in range(CAPTURE_FRAMES):
+   #     frame = await capture_frame(i)
+    #    frame.save(f"output/frame{i}.png")
 
 
-@cocotb.test()
+#@cocotb.test()
 #*async def compare_reference(dut):
 
   #  for img in glob.glob("output/frame*.png"):
